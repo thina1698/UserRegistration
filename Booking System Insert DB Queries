@@ -61,3 +61,15 @@ VALUES
 (9, 9, 2, 1),  -- CreditCard
 (10, 10, 3, 1);--DebitCard
 
+INSERT INTO RoleMaster (RoleMasterId, RoleMasterName)
+VALUES 
+(1, 'Manager'),
+(2, 'Admin'),
+(3, 'Super Admin');
+
+INSERT INTO [User] (UserId, FirstName, LastName, Email, Password, PhoneNumber, City, RoleMasterId)
+VALUES 
+(1, 'Arun', 'Raja', 'arun156@gmail.com', 'arun123@@', '8945797583', 'Chennai', 1),
+(3, 'Thina', 'Karan', 'thina345@gmail.com', 'thina166$', '7857838989', 'Bangalore', 3),
+(5, 'Dhivya', 'Vicky', 'divya676@gmail.com', 'Dhivyadhiv4', '2378457838', 'Hyderabad', 2),
+(7, 'Shiva', 'Honey', 'Shivashiv@gmail.com', 'Shiva456', '1378134785', 'Mumbai', NULL);
