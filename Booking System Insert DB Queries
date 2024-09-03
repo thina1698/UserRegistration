@@ -1,0 +1,63 @@
+Customer Table
+INSERT INTO Customer (CustomerID, FirstName, LastName, EmailId, ContactNumber, Address, DateOfBirth, LicenseNumber, LicenseExpiryDate)
+VALUES
+(1, 'Thina', 'Karan', 'thina1@gmail.com', '9138783423', 'Kumbakonam', '1999-05-22 17:01:36.1610000', 'TN6920232498309', '2039-08-16 17:07:36.1610000'),
+(2, 'Shiva', 'Kumar', 'shiv1@gmail.com', '7654383423', 'Thanjavur', '1999-05-08 17:01:36.1610000', 'TN4920232498309', '2025-08-16 17:09:14.4120000'),
+(3, 'Arun', 'Raj', 'arununanr@gmail.com', '093485932923', 'Tuticorin', '2000-10-20 17:01:36.1610000', 'TN312003454498309', '2030-08-20 17:07:36.1610000'),
+(4, 'Ilaya', 'Rajan', 'ilaya76@gmail.com', '913124323', 'Puducherry', '1997-05-31 17:01:36.1610000', 'PY02256232498309', '2035-08-16 17:09:14.4120000'),
+(5, 'Kavi', 'Rajan', 'kavivi@gmail.com', '9138783423', 'Madurai', '1999-06-22 17:01:36.1610000', 'TN5820232498309', '2034-08-16 17:09:14.4120000'),
+(6, 'Meena', 'S', 'meena@gmail.com', '9123456789', 'Chennai', '1990-04-15 17:01:36.1610000', 'TN8920232498309', '2035-08-16 17:07:36.1610000'),
+(7, 'Raj', 'K', 'raj@gmail.com', '9876543210', 'Bangalore', '1985-03-25 17:01:36.1610000', 'KA1120232498309', '2030-12-25 17:09:14.4120000'),
+(8, 'Anitha', 'M', 'anitha@gmail.com', '9182736450', 'Hyderabad', '1995-07-14 17:01:36.1610000', 'AP5620232498309', '2028-06-20 17:07:36.1610000'),
+(9, 'Vikram', 'P', 'vikram@gmail.com', '9354761820', 'Mumbai', '1988-11-05 17:01:36.1610000', 'MH2320232498309', '2026-09-18 17:09:14.4120000'),
+(10, 'Priya', 'L', 'priya@gmail.com', '9012345678', 'Delhi', '1992-12-30 17:01:36.1610000', 'DL2020232498309', '2029-04-25 17:07:36.1610000');
+
+Vehicle Table
+INSERT INTO Vehicle (VehicleID, Brand, Name, LicensePlateNumber, InsuranceNumber, InsuranceExpiryDate, IsActive, Price)
+VALUES
+(1, 'Pulsar', '220F', 'TN69BK1698', '78348234', '2030-08-16 17:07:41.4140000', 1, 200000.00),
+(2, 'RoyalEnfield', 'Hunter350', 'TN49BT1039', '89324789', '2026-08-16 17:09:14.4120000', 1, 216000.00),
+(3, 'Ktm', 'duke390', 'PY02BT1039', '8932478129', '2022-08-16 17:09:14.4120000', 1, 236000.00),
+(4, 'Honda', 'CBR200', 'TN31BT1039', '99768759', '2027-08-16 17:09:14.4120000', 1, 210000.00),
+(5, 'Dominor', 'D350', 'TN58BB1029', '1234243489', '2025-08-16 17:09:14.4120000', 1, 316000.00),
+(6, 'Yamaha', 'FZ', 'TN10BK5698', '12345678', '2032-10-16 17:07:41.4140000', 1, 180000.00),
+(7, 'Suzuki', 'Gixxer', 'KA05BT2039', '87654321', '2024-11-16 17:09:14.4120000', 1, 195000.00),
+(8, 'Hero', 'Splendor', 'AP09CT7890', '56789123', '2026-05-16 17:09:14.4120000', 1, 85000.00),
+(9, 'TVS', 'Apache', 'MH12DT4567', '34567890', '2025-07-16 17:09:14.4120000', 1, 120000.00),
+(10, 'Bajaj', 'Avenger', 'DL03ET8910', '23456789', '2027-03-16 17:09:14.4120000', 1, 150000.00);
+
+Booking Table
+INSERT INTO Booking (BookingID, VehicleID, CustomerID, StartingLocation, EndingLocation, RentDate, ReturnDate,BookingCost)
+VALUES
+(1, 1, 1, 'Madurai', 'Thoothukudi', '2024-08-01 17:13:08.0370000', '2024-08-13 17:13:08.0370000',980.00),
+(2, 2, 2, 'Thanjavur', 'Chennai', '2024-08-15 17:14:31.1480000', '2024-08-15 17:14:31.1480000',2200.00),
+(3, 3, 3, 'Pondy', 'Cuddalore', '2024-08-15 17:15:06.3860000', '2024-08-20 17:15:06.3860000',750.00),
+(4, 4, 4, 'Ooty', 'Coimbatore', '2024-08-16 17:15:38.7950000', '2024-08-22 17:15:38.7950000',550.00),
+(5, 5, 5, 'Madurai', 'Trichy', '2024-08-14 17:16:11.4520000', '2024-08-15 17:16:11.4520000',800.00),
+(6, 6, 6, 'Chennai', 'Bangalore', '2024-07-01 17:13:08.0370000', '2024-07-05 17:13:08.0370000', 1000.00),
+(7, 7, 7, 'Bangalore', 'Hyderabad', '2024-07-10 17:14:31.1480000', '2024-07-15 17:14:31.1480000', 2500.00),
+(8, 8, 8, 'Hyderabad', 'Mumbai', '2024-08-01 17:15:06.3860000', '2024-08-05 17:15:06.3860000', 3000.00),
+(9, 9, 9, 'Mumbai', 'Delhi', '2024-08-10 17:15:38.7950000', '2024-08-15 17:15:38.7950000', 3500.00),
+(10, 10, 10, 'Delhi', 'Chennai', '2024-08-20 17:16:11.4520000', '2024-08-25 17:16:11.4520000', 4000.00);
+
+paymentMode Table
+INSERT INTO PaymentModel (PaymentModelID, PaymentModeType)
+VALUES
+(1, 'CashOnDelivery'),
+(2, 'CreditCard'),
+(3, 'DebitCard');
+
+Payment Table
+INSERT INTO Payment (PaymentID, BookingID, PaymentModelID, IsPaid)
+VALUES
+(1, 1, 1, 1),  -- CashOnDelivery
+(2, 2, 3, 1),  -- DebitCard
+(3, 3, 2, 1),  -- CreditCard
+(4, 4, 1, 1),  -- CashOnDelivery
+(5, 5, 1, 1),  -- CashOnDelivery
+(6, 6, 2, 1),  -- CreditCard
+(7, 7, 3, 1),  -- DebitCard
+(8, 8, 1, 1),  -- CashOnDelivery
+(9, 9, 2, 1),  -- CreditCard
+(10, 10, 3, 1);--DebitCard
+
